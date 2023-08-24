@@ -45,11 +45,11 @@ jobs:
         run: bundle exec rake build
 
   links:
-    if: github.repository == 'Homebrew/brew'
+    if: github.repository == 'oregonpillow/brew'
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@master
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      -  uses: gaurav-nelson/github-action-markdown-link-check@v1
 
   rubydoc:
     if: github.repository == 'Homebrew/brew'
