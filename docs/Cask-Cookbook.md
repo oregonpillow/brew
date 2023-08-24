@@ -1288,7 +1288,7 @@ Manual creation can be facilitated with:
 
 * Some of the developer tools which are already available in Homebrew Cask.
 * `sudo find / -iname "*<search item>*"`
-* An uninstaller tool such as [AppCleaner](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/appcleaner.rb).
+* An uninstaller tool such as [AppCleaner](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/a/appcleaner.rb).
 * Inspection of the usual paths, i.e. `/Library/{'Application Support',LaunchAgents,LaunchDaemons,Frameworks,Logs,Preferences,PrivilegedHelperTools}` and `~/Library/{'Application Support',Caches,Containers,LaunchAgents,Logs,Preferences,'Saved Application State'}`.
 
 ---
@@ -1326,9 +1326,9 @@ Details of software names and brands will inevitably be lost in the conversion t
 
 * Remove `.app` from the end.
 
-* Remove from the end: the string “app”, if the vendor styles the name like “Software App.app”. Exception: when “app” is an inseparable part of the name, without which the name would be inherently nonsensical, as in [whatsapp.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/whatsapp.rb).
+* Remove from the end: the string “app”, if the vendor styles the name like “Software App.app”. Exception: when “app” is an inseparable part of the name, without which the name would be inherently nonsensical, as in [whatsapp.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/w/whatsapp.rb).
 
-* Remove from the end: version numbers or incremental release designations such as “alpha”, “beta”, or “release candidate”. Strings which distinguish different capabilities or codebases such as “Community Edition” are currently accepted. Exception: when a number is not an incremental release counter, but a differentiator for a different product from a different vendor, as in [kdiff3.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/kdiff3.rb).
+* Remove from the end: version numbers or incremental release designations such as “alpha”, “beta”, or “release candidate”. Strings which distinguish different capabilities or codebases such as “Community Edition” are currently accepted. Exception: when a number is not an incremental release counter, but a differentiator for a different product from a different vendor, as in [kdiff3.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/k/kdiff3.rb).
 
 * If the version number is arranged to occur in the middle of the App name, it should also be removed.
 
@@ -1336,7 +1336,7 @@ Details of software names and brands will inevitably be lost in the conversion t
 
 * Remove from the end: strings such as “Desktop”, “for Desktop”.
 
-* Remove from the end: strings such as “Mac”, “for Mac”, “for OS X”, “macOS”, “for macOS”. These terms are generally added to ported software such as “MAME OS X.app”. Exception: when the software is not a port, and “Mac” is an inseparable part of the name, without which the name would be inherently nonsensical, as in [PlayOnMac.app](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/playonmac.rb).
+* Remove from the end: strings such as “Mac”, “for Mac”, “for OS X”, “macOS”, “for macOS”. These terms are generally added to ported software such as “MAME OS X.app”. Exception: when the software is not a port, and “Mac” is an inseparable part of the name, without which the name would be inherently nonsensical, as in [PlayOnMac.app](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/p/playonmac.rb).
 
 * Remove from the end: hardware designations such as “for x86”, “32-bit”, “ARM”.
 
@@ -1346,7 +1346,7 @@ Details of software names and brands will inevitably be lost in the conversion t
 
 * If the result of that process is a generic term, such as “Macintosh Installer”, try prepending the name of the vendor or developer, followed by a hyphen. If that doesn’t work, then just create the best name you can, based on the vendor’s web page.
 
-* If the result conflicts with the name of an existing cask, make yours unique by prepending the name of the vendor or developer, followed by a hyphen. Example: [unison.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/unison.rb) and [panic-unison.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/panic-unison.rb).
+* If the result conflicts with the name of an existing cask, make yours unique by prepending the name of the vendor or developer, followed by a hyphen. Example: [unison.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/u/unison.rb) and [panic-unison.rb](https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/p/panic-unison.rb).
 
 * Inevitably, there are a small number of exceptions not covered by the rules. Don’t hesitate to [use the forum](https://github.com/orgs/Homebrew/discussions) if you have a problem.
 
