@@ -44,15 +44,6 @@ jobs:
         working-directory: ${{ steps.set-up-homebrew.outputs.repository-path }}/docs
         run: bundle exec rake build
 
-  links:
-    if: github.repository == 'oregonpillow/brew'
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@master
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          folder-path: 'docs'
-
   rubydoc:
     if: github.repository == 'Homebrew/brew'
     runs-on: ubuntu-22.04
